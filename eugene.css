@@ -1,0 +1,232 @@
+﻿/* eugene.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.eugene-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.eugene-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.eugene-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.eugene-table,.eugene-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.eugene-table-all{border:1px solid #ccc}
+.eugene-bordered tr,.eugene-table-all tr{border-bottom:1px solid #ddd}.eugene-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.eugene-table-all tr:nth-child(odd){background-color:#fff}.eugene-table-all tr:nth-child(even){background-color:#f1f1f1}
+.eugene-hoverable tbody tr:hover,.eugene-ul.eugene-hoverable li:hover{background-color:#ccc}.eugene-centered tr th,.eugene-centered tr td{text-align:center}
+.eugene-table td,.eugene-table th,.eugene-table-all td,.eugene-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.eugene-table th:first-child,.eugene-table td:first-child,.eugene-table-all th:first-child,.eugene-table-all td:first-child{padding-left:16px}
+.eugene-btn,.eugene-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.eugene-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.eugene-btn,.eugene-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.eugene-disabled,.eugene-btn:disabled,.eugene-button:disabled{cursor:not-allowed;opacity:0.3}.eugene-disabled *,:disabled *{pointer-events:none}
+.eugene-btn.eugene-disabled:hover,.eugene-btn:disabled:hover{box-shadow:none}
+.eugene-badge,.eugene-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.eugene-badge{border-radius:50%}
+.eugene-ul{list-style-type:none;padding:0;margin:0}.eugene-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.eugene-ul li:last-child{border-bottom:none}
+.eugene-tooltip,.eugene-display-container{position:relative}.eugene-tooltip .eugene-text{display:none}.eugene-tooltip:hover .eugene-text{display:inline-block}
+.eugene-ripple:active{opacity:0.5}.eugene-ripple{transition:opacity 0s}
+.eugene-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.eugene-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.eugene-dropdown-click,.eugene-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.eugene-dropdown-hover:hover .eugene-dropdown-content{display:block}
+.eugene-dropdown-hover:first-child,.eugene-dropdown-click:hover{background-color:#ccc;color:#000}
+.eugene-dropdown-hover:hover > .eugene-button:first-child,.eugene-dropdown-click:hover > .eugene-button:first-child{background-color:#ccc;color:#000}
+.eugene-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.eugene-check,.eugene-radio{width:24px;height:24px;position:relative;top:6px}
+.eugene-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.eugene-bar-block .eugene-dropdown-hover,.eugene-bar-block .eugene-dropdown-click{width:100%}
+.eugene-bar-block .eugene-dropdown-hover .eugene-dropdown-content,.eugene-bar-block .eugene-dropdown-click .eugene-dropdown-content{min-width:100%}
+.eugene-bar-block .eugene-dropdown-hover .eugene-button,.eugene-bar-block .eugene-dropdown-click .eugene-button{width:100%;text-align:left;padding:8px 16px}
+.eugene-main,#main{transition:margin-left .4s}
+.eugene-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.eugene-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.eugene-bar{width:100%;overflow:hidden}.eugene-center .eugene-bar{display:inline-block;width:auto}
+.eugene-bar .eugene-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.eugene-bar .eugene-dropdown-hover,.eugene-bar .eugene-dropdown-click{position:static;float:left}
+.eugene-bar .eugene-button{white-space:normal}
+.eugene-bar-block .eugene-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.eugene-bar-block.eugene-center .eugene-bar-item{text-align:center}.eugene-block{display:block;width:100%}
+.eugene-responsive{display:block;overflow-x:auto}
+.eugene-container:after,.eugene-container:before,.eugene-panel:after,.eugene-panel:before,.eugene-row:after,.eugene-row:before,.eugene-row-padding:after,.eugene-row-padding:before,
+.eugene-cell-row:before,.eugene-cell-row:after,.eugene-clear:after,.eugene-clear:before,.eugene-bar:before,.eugene-bar:after{content:"";display:table;clear:both}
+.eugene-col,.eugene-half,.eugene-third,.eugene-twothird,.eugene-threequarter,.eugene-quarter{float:left;width:100%}
+.eugene-col.s1{width:8.33333%}.eugene-col.s2{width:16.66666%}.eugene-col.s3{width:24.99999%}.eugene-col.s4{width:33.33333%}
+.eugene-col.s5{width:41.66666%}.eugene-col.s6{width:49.99999%}.eugene-col.s7{width:58.33333%}.eugene-col.s8{width:66.66666%}
+.eugene-col.s9{width:74.99999%}.eugene-col.s10{width:83.33333%}.eugene-col.s11{width:91.66666%}.eugene-col.s12{width:99.99999%}
+@media (min-width:601px){.eugene-col.m1{width:8.33333%}.eugene-col.m2{width:16.66666%}.eugene-col.m3,.eugene-quarter{width:24.99999%}.eugene-col.m4,.eugene-third{width:33.33333%}
+.eugene-col.m5{width:41.66666%}.eugene-col.m6,.eugene-half{width:49.99999%}.eugene-col.m7{width:58.33333%}.eugene-col.m8,.eugene-twothird{width:66.66666%}
+.eugene-col.m9,.eugene-threequarter{width:74.99999%}.eugene-col.m10{width:83.33333%}.eugene-col.m11{width:91.66666%}.eugene-col.m12{width:99.99999%}}
+@media (min-width:993px){.eugene-col.l1{width:8.33333%}.eugene-col.l2{width:16.66666%}.eugene-col.l3{width:24.99999%}.eugene-col.l4{width:33.33333%}
+.eugene-col.l5{width:41.66666%}.eugene-col.l6{width:49.99999%}.eugene-col.l7{width:58.33333%}.eugene-col.l8{width:66.66666%}
+.eugene-col.l9{width:74.99999%}.eugene-col.l10{width:83.33333%}.eugene-col.l11{width:91.66666%}.eugene-col.l12{width:99.99999%}}
+.eugene-rest{overflow:hidden}.eugene-stretch{margin-left:-16px;margin-right:-16px}
+.eugene-content,.eugene-auto{margin-left:auto;margin-right:auto}.eugene-content{max-width:980px}.eugene-auto{max-width:1140px}
+.eugene-cell-row{display:table;width:100%}.eugene-cell{display:table-cell}
+.eugene-cell-top{vertical-align:top}.eugene-cell-middle{vertical-align:middle}.eugene-cell-bottom{vertical-align:bottom}
+.eugene-hide{display:none!important}.eugene-show-block,.eugene-show{display:block!important}.eugene-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.eugene-auto{max-width:95%}}
+@media (max-width:600px){.eugene-modal-content{margin:0 10px;width:auto!important}.eugene-modal{padding-top:30px}
+.eugene-dropdown-hover.eugene-mobile .eugene-dropdown-content,.eugene-dropdown-click.eugene-mobile .eugene-dropdown-content{position:relative}	
+.eugene-hide-small{display:none!important}.eugene-mobile{display:block;width:100%!important}.eugene-bar-item.eugene-mobile,.eugene-dropdown-hover.eugene-mobile,.eugene-dropdown-click.eugene-mobile{text-align:center}
+.eugene-dropdown-hover.eugene-mobile,.eugene-dropdown-hover.eugene-mobile .eugene-btn,.eugene-dropdown-hover.eugene-mobile .eugene-button,.eugene-dropdown-click.eugene-mobile,.eugene-dropdown-click.eugene-mobile .eugene-btn,.eugene-dropdown-click.eugene-mobile .eugene-button{width:100%}}
+@media (max-width:768px){.eugene-modal-content{width:500px}.eugene-modal{padding-top:50px}}
+@media (min-width:993px){.eugene-modal-content{width:900px}.eugene-hide-large{display:none!important}.eugene-sidebar.eugene-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.eugene-hide-medium{display:none!important}}
+@media (max-width:992px){.eugene-sidebar.eugene-collapse{display:none}.eugene-main{margin-left:0!important;margin-right:0!important}.eugene-auto{max-width:100%}}
+.eugene-top,.eugene-bottom{position:fixed;width:100%;z-index:1}.eugene-top{top:0}.eugene-bottom{bottom:0}
+.eugene-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.eugene-display-topleft{position:absolute;left:0;top:0}.eugene-display-topright{position:absolute;right:0;top:0}
+.eugene-display-bottomleft{position:absolute;left:0;bottom:0}.eugene-display-bottomright{position:absolute;right:0;bottom:0}
+.eugene-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.eugene-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.eugene-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.eugene-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.eugene-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.eugene-display-container:hover .eugene-display-hover{display:block}.eugene-display-container:hover span.eugene-display-hover{display:inline-block}.eugene-display-hover{display:none}
+.eugene-display-position{position:absolute}
+.eugene-circle{border-radius:50%}
+.eugene-round-small{border-radius:2px}.eugene-round,.eugene-round-medium{border-radius:4px}.eugene-round-large{border-radius:8px}.eugene-round-xlarge{border-radius:16px}.eugene-round-xxlarge{border-radius:32px}
+.eugene-row-padding,.eugene-row-padding>.eugene-half,.eugene-row-padding>.eugene-third,.eugene-row-padding>.eugene-twothird,.eugene-row-padding>.eugene-threequarter,.eugene-row-padding>.eugene-quarter,.eugene-row-padding>.eugene-col{padding:0 8px}
+.eugene-container,.eugene-panel{padding:0.01em 16px}.eugene-panel{margin-top:16px;margin-bottom:16px}
+.eugene-code,.eugene-codespan{font-family:Consolas,"courier new";font-size:16px}
+.eugene-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.eugene-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.eugene-card,.eugene-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.eugene-card-4,.eugene-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.eugene-spin{animation:eugene-spin 2s infinite linear}@keyframes eugene-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.eugene-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.eugene-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.eugene-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.eugene-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.eugene-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.eugene-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.eugene-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.eugene-animate-input{transition:width 0.4s ease-in-out}.eugene-animate-input:focus{width:100%!important}
+.eugene-opacity,.eugene-hover-opacity:hover{opacity:0.60}.eugene-opacity-off,.eugene-hover-opacity-off:hover{opacity:1}
+.eugene-opacity-max{opacity:0.25}.eugene-opacity-min{opacity:0.75}
+.eugene-greyscale-max,.eugene-grayscale-max,.eugene-hover-greyscale:hover,.eugene-hover-grayscale:hover{filter:grayscale(100%)}
+.eugene-greyscale,.eugene-grayscale{filter:grayscale(75%)}.eugene-greyscale-min,.eugene-grayscale-min{filter:grayscale(50%)}
+.eugene-sepia{filter:sepia(75%)}.eugene-sepia-max,.eugene-hover-sepia:hover{filter:sepia(100%)}.eugene-sepia-min{filter:sepia(50%)}
+.eugene-tiny{font-size:10px!important}.eugene-small{font-size:12px!important}.eugene-medium{font-size:15px!important}.eugene-large{font-size:18px!important}
+.eugene-xlarge{font-size:24px!important}.eugene-xxlarge{font-size:36px!important}.eugene-xxxlarge{font-size:48px!important}.eugene-jumbo{font-size:64px!important}
+.eugene-left-align{text-align:left!important}.eugene-right-align{text-align:right!important}.eugene-justify{text-align:justify!important}.eugene-center{text-align:center!important}
+.eugene-border-0{border:0!important}.eugene-border{border:1px solid #ccc!important}
+.eugene-border-top{border-top:1px solid #ccc!important}.eugene-border-bottom{border-bottom:1px solid #ccc!important}
+.eugene-border-left{border-left:1px solid #ccc!important}.eugene-border-right{border-right:1px solid #ccc!important}
+.eugene-topbar{border-top:6px solid #ccc!important}.eugene-bottombar{border-bottom:6px solid #ccc!important}
+.eugene-leftbar{border-left:6px solid #ccc!important}.eugene-rightbar{border-right:6px solid #ccc!important}
+.eugene-section,.eugene-code{margin-top:16px!important;margin-bottom:16px!important}
+.eugene-margin{margin:16px!important}.eugene-margin-top{margin-top:16px!important}.eugene-margin-bottom{margin-bottom:16px!important}
+.eugene-margin-left{margin-left:16px!important}.eugene-margin-right{margin-right:16px!important}
+.eugene-padding-small{padding:4px 8px!important}.eugene-padding{padding:8px 16px!important}.eugene-padding-large{padding:12px 24px!important}
+.eugene-padding-16{padding-top:16px!important;padding-bottom:16px!important}.eugene-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.eugene-padding-32{padding-top:32px!important;padding-bottom:32px!important}.eugene-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.eugene-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.eugene-left{float:left!important}.eugene-right{float:right!important}
+.eugene-button:hover{color:#000!important;background-color:#ccc!important}
+.eugene-transparent,.eugene-hover-none:hover{background-color:transparent!important}
+.eugene-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.eugene-amber,.eugene-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.eugene-aqua,.eugene-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.eugene-blue,.eugene-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.eugene-light-blue,.eugene-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.eugene-brown,.eugene-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.eugene-cyan,.eugene-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.eugene-blue-grey,.eugene-hover-blue-grey:hover,.eugene-blue-gray,.eugene-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.eugene-green,.eugene-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.eugene-light-green,.eugene-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.eugene-indigo,.eugene-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.eugene-khaki,.eugene-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.eugene-lime,.eugene-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.eugene-orange,.eugene-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.eugene-deep-orange,.eugene-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.eugene-pink,.eugene-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.eugene-purple,.eugene-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.eugene-deep-purple,.eugene-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.eugene-red,.eugene-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.eugene-sand,.eugene-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.eugene-teal,.eugene-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.eugene-yellow,.eugene-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.eugene-white,.eugene-hover-white:hover{color:#000!important;background-color:#fff!important}
+.eugene-black,.eugene-hover-black:hover{color:#fff!important;background-color:#000!important}
+.eugene-grey,.eugene-hover-grey:hover,.eugene-gray,.eugene-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.eugene-light-grey,.eugene-hover-light-grey:hover,.eugene-light-gray,.eugene-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.eugene-dark-grey,.eugene-hover-dark-grey:hover,.eugene-dark-gray,.eugene-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.eugene-pale-red,.eugene-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.eugene-pale-green,.eugene-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.eugene-pale-yellow,.eugene-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.eugene-pale-blue,.eugene-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.eugene-text-amber,.eugene-hover-text-amber:hover{color:#ffc107!important}
+.eugene-text-aqua,.eugene-hover-text-aqua:hover{color:#00ffff!important}
+.eugene-text-blue,.eugene-hover-text-blue:hover{color:#2196F3!important}
+.eugene-text-light-blue,.eugene-hover-text-light-blue:hover{color:#87CEEB!important}
+.eugene-text-brown,.eugene-hover-text-brown:hover{color:#795548!important}
+.eugene-text-cyan,.eugene-hover-text-cyan:hover{color:#00bcd4!important}
+.eugene-text-blue-grey,.eugene-hover-text-blue-grey:hover,.eugene-text-blue-gray,.eugene-hover-text-blue-gray:hover{color:#607d8b!important}
+.eugene-text-green,.eugene-hover-text-green:hover{color:#4CAF50!important}
+.eugene-text-light-green,.eugene-hover-text-light-green:hover{color:#8bc34a!important}
+.eugene-text-indigo,.eugene-hover-text-indigo:hover{color:#3f51b5!important}
+.eugene-text-khaki,.eugene-hover-text-khaki:hover{color:#b4aa50!important}
+.eugene-text-lime,.eugene-hover-text-lime:hover{color:#cddc39!important}
+.eugene-text-orange,.eugene-hover-text-orange:hover{color:#ff9800!important}
+.eugene-text-deep-orange,.eugene-hover-text-deep-orange:hover{color:#ff5722!important}
+.eugene-text-pink,.eugene-hover-text-pink:hover{color:#e91e63!important}
+.eugene-text-purple,.eugene-hover-text-purple:hover{color:#9c27b0!important}
+.eugene-text-deep-purple,.eugene-hover-text-deep-purple:hover{color:#673ab7!important}
+.eugene-text-red,.eugene-hover-text-red:hover{color:#f44336!important}
+.eugene-text-sand,.eugene-hover-text-sand:hover{color:#fdf5e6!important}
+.eugene-text-teal,.eugene-hover-text-teal:hover{color:#009688!important}
+.eugene-text-yellow,.eugene-hover-text-yellow:hover{color:#d2be0e!important}
+.eugene-text-white,.eugene-hover-text-white:hover{color:#fff!important}
+.eugene-text-black,.eugene-hover-text-black:hover{color:#000!important}
+.eugene-text-grey,.eugene-hover-text-grey:hover,.eugene-text-gray,.eugene-hover-text-gray:hover{color:#757575!important}
+.eugene-text-light-grey,.eugene-hover-text-light-grey:hover,.eugene-text-light-gray,.eugene-hover-text-light-gray:hover{color:#f1f1f1!important}
+.eugene-text-dark-grey,.eugene-hover-text-dark-grey:hover,.eugene-text-dark-gray,.eugene-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.eugene-border-amber,.eugene-hover-border-amber:hover{border-color:#ffc107!important}
+.eugene-border-aqua,.eugene-hover-border-aqua:hover{border-color:#00ffff!important}
+.eugene-border-blue,.eugene-hover-border-blue:hover{border-color:#2196F3!important}
+.eugene-border-light-blue,.eugene-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.eugene-border-brown,.eugene-hover-border-brown:hover{border-color:#795548!important}
+.eugene-border-cyan,.eugene-hover-border-cyan:hover{border-color:#00bcd4!important}
+.eugene-border-blue-grey,.eugene-hover-border-blue-grey:hover,.eugene-border-blue-gray,.eugene-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.eugene-border-green,.eugene-hover-border-green:hover{border-color:#4CAF50!important}
+.eugene-border-light-green,.eugene-hover-border-light-green:hover{border-color:#8bc34a!important}
+.eugene-border-indigo,.eugene-hover-border-indigo:hover{border-color:#3f51b5!important}
+.eugene-border-khaki,.eugene-hover-border-khaki:hover{border-color:#f0e68c!important}
+.eugene-border-lime,.eugene-hover-border-lime:hover{border-color:#cddc39!important}
+.eugene-border-orange,.eugene-hover-border-orange:hover{border-color:#ff9800!important}
+.eugene-border-deep-orange,.eugene-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.eugene-border-pink,.eugene-hover-border-pink:hover{border-color:#e91e63!important}
+.eugene-border-purple,.eugene-hover-border-purple:hover{border-color:#9c27b0!important}
+.eugene-border-deep-purple,.eugene-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.eugene-border-red,.eugene-hover-border-red:hover{border-color:#f44336!important}
+.eugene-border-sand,.eugene-hover-border-sand:hover{border-color:#fdf5e6!important}
+.eugene-border-teal,.eugene-hover-border-teal:hover{border-color:#009688!important}
+.eugene-border-yellow,.eugene-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.eugene-border-white,.eugene-hover-border-white:hover{border-color:#fff!important}
+.eugene-border-black,.eugene-hover-border-black:hover{border-color:#000!important}
+.eugene-border-grey,.eugene-hover-border-grey:hover,.eugene-border-gray,.eugene-hover-border-gray:hover{border-color:#9e9e9e!important}
+.eugene-border-light-grey,.eugene-hover-border-light-grey:hover,.eugene-border-light-gray,.eugene-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.eugene-border-dark-grey,.eugene-hover-border-dark-grey:hover,.eugene-border-dark-gray,.eugene-hover-border-dark-gray:hover{border-color:#616161!important}
+.eugene-border-pale-red,.eugene-hover-border-pale-red:hover{border-color:#ffe7e7!important}.eugene-border-pale-green,.eugene-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.eugene-border-pale-yellow,.eugene-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.eugene-border-pale-blue,.eugene-hover-border-pale-blue:hover{border-color:#e7ffff!important}
